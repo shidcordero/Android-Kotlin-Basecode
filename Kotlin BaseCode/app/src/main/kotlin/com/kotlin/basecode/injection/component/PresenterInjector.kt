@@ -18,10 +18,10 @@ import javax.inject.Singleton
 interface PresenterInjector {
     /**
      * Injects required dependencies into the specified Presenter.
-     * @param postPresenter Presenter in which to inject the dependencies
+     * @param presenter Presenter in which to inject the dependencies
      */
-    fun inject(postPresenter: UserPresenter)
-    fun inject(postPresenter: SplashPresenter)
+    fun inject(presenter: UserPresenter)
+    fun inject(presenter: SplashPresenter)
 
     @Component.Builder
     interface Builder {

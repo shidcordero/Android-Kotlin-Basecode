@@ -7,7 +7,6 @@ import io.reactivex.schedulers.Schedulers
 import com.kotlin.basecode.R
 import com.kotlin.basecode.network.UserApi
 import javax.inject.Inject
-import com.github.pwittchen.reactivenetwork.library.rx2.ReactiveNetwork
 
 
 
