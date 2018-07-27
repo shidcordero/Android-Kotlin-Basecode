@@ -4,9 +4,18 @@ An Android Kotlin Basecode for developers who want to start developing android m
 The following technologies used in this project:
 
 - MVP Architecture
-- RxKotlin
-- Dagger2
-- Retrofit
+- RxAndroid
+- Dagger 2
+- Retrofit 2
 - Data Binding
 
 Note: This is still an ongoing project.
+
+Done:
+- User List
+- Splash Screen implementation(new)
+
+Todo:
+- Login Screen
+- CRUD implementation on User
+- more coming features
