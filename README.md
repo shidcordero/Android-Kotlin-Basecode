@@ -4,9 +4,21 @@ An Android Kotlin Basecode for developers who want to start developing android m
 The following technologies used in this project:
 
 - MVP Architecture
-- RxKotlin
-- Dagger2
-- Retrofit
+- RxAndroid
+- Dagger 2
+- Retrofit 2
 - Data Binding
 
-Note: This is still an ongoing project.
+On this implementation, no actual Web Service API. I use https://my-json-server.typicode.com/ to create a Fake Online REST API Server. You can find my server here(https://my-json-server.typicode.com/shidcordero12/android-json-server).
+
+Note: 
+This is still an ongoing project.
+
+Done:
+- User List
+- Splash Screen implementation(new)
+
+Todo:
+- Login Screen
+- CRUD implementation on User
+- more coming features
