@@ -3,10 +3,10 @@ An Android Kotlin Basecode for developers who want to start developing android m
 
 The following technologies used in this project are:
 
-• MVP Architecture
-• RxKotlin
-• Dagger2
-• Retrofit
-• Data Binding
+- MVP Architecture
+- RxKotlin
+- Dagger2
+- Retrofit
+- Data Binding
 
 Note: This is still an ongoing project.
