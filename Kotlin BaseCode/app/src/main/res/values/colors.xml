@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Base Colors -->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#41463F</color>
+    <color name="colorAccent">#F68E1E</color>
+
+    <!-- Common Colors -->
+    <color name="colorFieldError">#990000</color>
+</resources>
