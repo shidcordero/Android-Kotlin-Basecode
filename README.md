@@ -1,7 +1,7 @@
 # Android-Kotlin-Basecode
 An Android Kotlin Basecode for developers who want to start developing android mobile application. This code shows an application developed with the latest best practices on Android.
 
-The following technologies used in this project are:
+The following technologies used in this project:
 
 - MVP Architecture
 - RxKotlin
