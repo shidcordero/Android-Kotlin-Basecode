@@ -9,8 +9,8 @@ import retrofit2.http.GET
  */
 interface UserApi {
     /**
-     * Get the list of the pots from the API
+     * Get the list of the user from the API
      */
-    @GET("/users")
+    @GET("users")
     fun getUsers(): Observable<List<User>>
 }

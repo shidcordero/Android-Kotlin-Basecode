@@ -1,5 +1,6 @@
 package com.kotlin.basecode.ui.splashscreen
 
+import com.kotlin.basecode.R
 import com.kotlin.basecode.base.BasePresenter
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -22,20 +23,17 @@ class SplashPresenter(splashView: SplashView) : BasePresenter<SplashView>(splash
     /**
      * Loads the users from the API and presents them in the view when retrieved, or shows error if
      * any.
+     * Note: This is just a simulation for Loading Screen, change this to api call if you
+     * get data from a Web Service
      */
     private fun loadData() {
-        Observable.intervalRange(0L, 50L, 10, 10, TimeUnit.MILLISECONDS,
-                AndroidSchedulers.mainThread())
-                .subscribe { view.updateProgress() }
-//        subscription = userApi
-//                .getUsers()
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribeOn(Schedulers.io())
-//                .doOnTerminate { view.hideLoading() }
-//                .subscribe(
-//                        { userList -> view.updateUsers(userList) },
-//                        { view.showError(R.string.error_processing) }
-//                )
+        Observable.intervalRange(0, 10, 1000, 1000,
+                    TimeUnit.MILLISECONDS, AndroidSchedulers.mainThread())
+                .doOnComplete{view.intentLogin()}
+                .subscribe(
+                        { view.updateProgress() },
+                        { view.showError(R.string.error_processing)}
+                )
     }
 
     override fun onViewDestroyed() {
