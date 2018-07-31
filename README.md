@@ -21,4 +21,6 @@ Done:
 Todo:
 - Login Screen
 - CRUD implementation on User
+- Room Database
+- Repository implementation
 - more coming features
