@@ -9,7 +9,7 @@ The following technologies used in this project:
 - [Retrofit 2](https://medium.com/mindorks/understanding-android-networking-library-retrofit-2-510d07dc5b1f)
 - [Data Binding](http://www.vogella.com/tutorials/AndroidDatabinding/article.html)
 
-On this implementation, no actual Web Service API. I use https://my-json-server.typicode.com/ to create a Fake Online REST API Server. You can find my server here(https://my-json-server.typicode.com/shidcordero12/android-json-server).
+On this project, no Web Service API is created. I use https://my-json-server.typicode.com/ to create a Fake Online REST API Server. You can find my server here(https://my-json-server.typicode.com/shidcordero12/android-json-server).
 
 Note: 
 This is still an ongoing project.
@@ -21,6 +21,6 @@ Done:
 Todo:
 - Login Screen
 - CRUD implementation on User
-- Room Database
+- Room Database w/ RxJava
 - Repository implementation
 - more coming features
