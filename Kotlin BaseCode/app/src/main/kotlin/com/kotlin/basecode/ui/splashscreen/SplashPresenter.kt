@@ -20,6 +20,10 @@ class SplashPresenter(splashView: SplashView) : BasePresenter<SplashView>(splash
         loadData()
     }
 
+    override fun onViewDestroyed() {
+        subscription?.dispose()
+    }
+
     /**
      * Loads the users from the API and presents them in the view when retrieved, or shows error if
      * any.
@@ -36,7 +40,4 @@ class SplashPresenter(splashView: SplashView) : BasePresenter<SplashView>(splash
                 )
     }
 
-    override fun onViewDestroyed() {
-        subscription?.dispose()
-    }
 }

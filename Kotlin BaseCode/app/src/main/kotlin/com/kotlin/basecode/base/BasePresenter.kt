@@ -4,6 +4,7 @@ import com.kotlin.basecode.injection.component.DaggerPresenterInjector
 import com.kotlin.basecode.injection.component.PresenterInjector
 import com.kotlin.basecode.injection.module.ContextModule
 import com.kotlin.basecode.injection.module.NetworkModule
+import com.kotlin.basecode.ui.login.LoginPresenter
 import com.kotlin.basecode.ui.splashscreen.SplashPresenter
 import com.kotlin.basecode.ui.user.UserPresenter
 
@@ -44,6 +45,7 @@ abstract class BasePresenter<out V : BaseView>(protected val view: V) {
         when (this) {
             is UserPresenter -> injector.inject(this)
             is SplashPresenter -> injector.inject(this)
+            is LoginPresenter -> injector.inject(this)
         }
     }
 }

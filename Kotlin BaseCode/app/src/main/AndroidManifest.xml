@@ -27,7 +27,13 @@
         </activity>
 
         <activity
-            android:name="com.kotlin.basecode.ui.user.UserActivity">
+            android:name="com.kotlin.basecode.ui.user.UserActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name="com.kotlin.basecode.ui.login.LoginActivity"
+            android:theme="@style/AppTheme.Login">
         </activity>
 
 

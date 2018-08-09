@@ -1,11 +1,25 @@
 <resources>
     <!-- Application Splash Screen -->
-    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Launcher" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base Application Theme -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+    </style>
+
+    <style name="AppTheme.Login" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
@@ -13,16 +27,8 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!-- Base Application Theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
     <!-- Orange Button Style -->
-    <style name="AppTheme.ButtonOrange" parent="TextAppearance.AppCompat.Button">
+    <style name="AppTheme.ButtonOrange" parent="@style/TextAppearance.AppCompat.Button">
         <item name="android:background">@drawable/rounded_button</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">18sp</item>
@@ -41,7 +47,7 @@
     </style>
 
     <!-- Error on Field Style -->
-    <style name="AppTheme.ErrorText" parent="TextAppearance.AppCompat.Small">
+    <style name="AppTheme.ErrorText" parent="@style/TextAppearance.AppCompat.Small">
         <item name="android:textColor">@color/colorFieldError</item>
     </style>
 

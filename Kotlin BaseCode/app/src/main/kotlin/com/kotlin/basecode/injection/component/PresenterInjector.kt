@@ -5,6 +5,7 @@ import dagger.Component
 import com.kotlin.basecode.base.BaseView
 import com.kotlin.basecode.injection.module.ContextModule
 import com.kotlin.basecode.injection.module.NetworkModule
+import com.kotlin.basecode.ui.login.LoginPresenter
 import com.kotlin.basecode.ui.splashscreen.SplashPresenter
 import com.kotlin.basecode.ui.user.UserPresenter
 import javax.inject.Singleton
@@ -22,6 +23,7 @@ interface PresenterInjector {
      */
     fun inject(presenter: UserPresenter)
     fun inject(presenter: SplashPresenter)
+    fun inject(presenter: LoginPresenter)
 
     @Component.Builder
     interface Builder {

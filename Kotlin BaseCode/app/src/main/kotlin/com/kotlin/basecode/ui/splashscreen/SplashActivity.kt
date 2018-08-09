@@ -8,6 +8,7 @@ import com.kotlin.basecode.R
 import com.kotlin.basecode.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 import com.kotlin.basecode.databinding.ActivitySplashScreenBinding
+import com.kotlin.basecode.ui.login.LoginActivity
 import com.kotlin.basecode.ui.user.UserActivity
 
 /**
@@ -53,7 +54,7 @@ class SplashActivity : BaseActivity<SplashPresenter>(), SplashView {
     }
 
     override fun intentLogin() {
-        startActivity(Intent(this@SplashActivity, UserActivity::class.java))
+        startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
     }
 
     override fun instantiatePresenter(): SplashPresenter {
